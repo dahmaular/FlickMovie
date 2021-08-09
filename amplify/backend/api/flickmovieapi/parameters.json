@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "flickmovieapi",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authnetflixclone868787cb",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
